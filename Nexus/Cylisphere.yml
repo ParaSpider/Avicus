@@ -1,0 +1,224 @@
+info:
+  title: Cylisphere
+  world: Cylisphere
+  type: nexus
+  creators:
+  - PlaZa_17
+  - Panda137
+  contributors:
+  - ParaSpider
+  version: 1.0
+  spawn: 0.5,122,0.5,90,0
+ 
+teams:
+  orange:
+    title: Cyan Team
+    spawn: 0.5,57,43.5,180,0
+    max: 6
+  red:
+    title: Red Team
+    spawn: 43.5,57,0.5,90,0
+    max: 6
+  orange:
+    title: Orange Team
+    spawn: -42.5,57,0.5,-90,0
+    max: 6
+  lime:
+    title: Lime Team
+    spawn: 0.5,57,-42.5,0,0
+    max: 6
+ 
+regions:
+  orange-spawn:
+    type: sphere
+    center: -42,56,0
+    radius: 6
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not edit the spawn area.'
+      damage:
+        who: 'orange'
+  red-spawn:
+    type: sphere
+    center: 43,56,0
+    radius: 6
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not edit the spawn area.'
+      damage:
+        who: 'red'
+  lime-spawn:
+    type: sphere
+    center: 0,57,-42
+    radius: 6
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not edit the spawn area.'
+      damage:
+        who: 'lime'
+  cyan-spawn:
+    type: sphere
+    center: 0,56,43
+    radius: 6
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not edit the spawn area.'
+      damage:
+        who: 'cyan'
+  jump-1:
+    type: point
+    point: -21,57,-9
+    flags:
+      enter:
+        who: '*'
+        triggers:
+          push:
+            velocity: 0.5
+            vertical: 1.0
+  jump-2:
+    type: point
+    point: -16,57,-16
+    flags:
+      enter:
+        who: '*'
+        triggers:
+          push:
+            velocity: 0.5
+            vertical: 1.0
+  jump-3:
+    type: point
+    point: -9,57,-21
+    flags:
+      enter:
+        who: '*'
+        triggers:
+          push:
+            velocity: 0.5
+            vertical: 1.0
+  jump-4:
+    type: point
+    point: 10,57,-21
+    flags:
+      enter:
+        who: '*'
+        triggers:
+          push:
+            velocity: 0.5
+            vertical: 1.0
+  jump-5:
+    type: point
+    point: 17,57,-16
+    flags:
+      enter:
+        who: '*'
+        triggers:
+          push:
+            velocity: 0.5
+            vertical: 1.0
+  jump-6:
+    type: point
+    point: 22,57,-9
+    flags:
+      enter:
+        who: '*'
+        triggers:
+          push:
+            velocity: 0.5
+            vertical: 1.0
+  jump-7:
+    type: point
+    point: 22,57,10
+    flags:
+      enter:
+        who: '*'
+        triggers:
+          push:
+            velocity: 0.5
+            vertical: 1.0
+  jump-8:
+    type: point
+    point: 17,57,17
+    flags:
+      enter:
+        who: '*'
+        triggers:
+          push:
+            velocity: 0.5
+            vertical: 1.0
+  jump-9:
+    type: point
+    point: 10,57,22
+    flags:
+      enter:
+        who: '*'
+        triggers:
+          push:
+            velocity: 0.5
+            vertical: 1.0
+  jump-10:
+    type: point
+    point: 22,57,-9
+    flags:
+      enter:
+        who: '*'
+        triggers:
+          push:
+            velocity: 0.5
+            vertical: 1.0
+  jump-11:
+    type: point
+    point: -9,57,22
+    flags:
+      enter:
+        who: '*'
+        triggers:
+          push:
+            velocity: 0.5
+            vertical: 1.0
+  jump-12:
+    type: point
+    point: -16,57,17
+    flags:
+      enter:
+        who: '*'
+        triggers:
+          push:
+            velocity: 0.5
+            vertical: 1.0
+  jump-13:
+    type: point
+    point: -21,57,10
+    flags:
+      enter:
+        who: '*'
+        triggers:
+          push:
+            velocity: 0.5
+            vertical: 1.0
+  center:
+    type: point
+    point: 0,57,0
+    flags:
+      enter:
+        who: '*'
+        triggers:
+          push:
+            velocity: 2.0
+            vertical: 0.0
+  everywhere:
+    type: global
+    flags:
+     fall_damage:
+        who: '*'
+      kill_player:
+        who: '*'
+        allow: true
+        triggers:
+          give_loadout:
+            loadout:
+              0:
+                item: golden_apple
