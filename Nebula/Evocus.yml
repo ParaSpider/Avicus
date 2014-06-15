@@ -1,0 +1,110 @@
+info:
+  title: Evocus
+  world: Evocus
+  duration: 3600
+  version: 1.0
+  type: dtm
+  creators:
+  - Evocal
+  spawn: 
+teams:
+  purple:
+    spawn: -8.5,86,21.5,180,0
+    title: Prospit
+    max: 10
+    monuments:
+      a:
+        name: F-Left
+        location: -39,88,-78
+      b:
+        name: F-Right
+        location: 21,88,-78
+      c:
+        name: B-Left
+        location: -22,88,-105
+      d:
+        name: B-Right
+        location: 4,88,-105
+  yellow: 
+    spawn: -8.5,86,-80.5,0,0
+    title: Derse
+    max: 10
+    monuments:
+      a:
+        name: F-Left
+        location: 21,88,18
+      b:
+        name: F-Right
+        location: -39,88,18
+      c:
+        name: B-Left
+        location: 4,88,45
+      d:
+        name: B-Right
+        location: -22,88,45
+
+remove-drops:
+- leather helmet
+- leather chestplate
+- leather leggings
+- leather boots
+- glass
+- slab
+ 
+repair-drops:
+- iron sword
+- bow
+- diamond pickaxe
+
+loadout:
+  chestplate:
+    item: leather chestplate
+  0:
+    item: iron sword
+  1:
+    item: bow
+  2:
+    item: diamond pickaxe
+    enchants:
+    - dig_speed:1
+  3:
+    title: '&eGolden Apple'
+    item: golden apple
+    amount: 2
+  4:
+    item: log
+    amount: 64
+  5:
+    item: glass
+    amount: 64
+  6:
+    item: doubleslab
+    amount: 64
+  7:
+    item: steak
+    amount: 26
+  28:
+    item: arrow
+    amount: 16
+
+regions:
+  yellow-spawn:
+    type: cuboid
+    min: -14,80,15
+    max: -4,89,25
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in this team''s spawn.'
+      damage:
+        who: 'yellow'
+  purple-spawn:
+    type: cuboid
+    min: -14,80,15
+    max: -4,89,25
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in this team''s spawn.'
+      damage:
+        who: 'purple'
