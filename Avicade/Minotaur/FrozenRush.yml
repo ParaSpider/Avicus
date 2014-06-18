@@ -1,0 +1,25 @@
+info:
+  title: Frozen Rush
+  world: FrozenRush
+  duration: 3600
+  version: 1.0
+  type: minotaur
+  creators:
+  - Archeonixx
+  spawn: 415.5,30,729.5,-180,0
+teams:
+  red:
+    title: Minotaur
+    max: 0
+    spawn: 415.5,24,695.5,0,0
+  lime:
+    title: Players
+    max: 16
+    spawn: 415.5,24,705.5,0,0
+regions:
+  win:
+    type: cuboid
+    min: 410,24,790
+    max: 420,22,790
+goal: win
+minotaur: red
