@@ -1,0 +1,14 @@
+info:
+  title: Estrella
+  world: Estrella
+  duration: 900
+  version: 1.0
+  type: red_alert
+  creators:
+  - schmenni
+  spawn: 1659.5,32,87.5,90,0
+teams:
+  white:
+    title: Players
+radius: 6
+center: 1659,32,87
