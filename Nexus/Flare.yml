@@ -1,0 +1,36 @@
+info:
+  title: Flare
+  world: Flare
+  type: nexus
+  creators:
+  - Archeonixx
+  version: 1.0
+  spawn: 103.5,81,749.5,-90,0
+
+teams:
+  orange:
+    title: Orange Team
+    spawn: 221.5,49,554.5,0,0
+    max: 30
+  red:
+    title: Red Team
+    spawn: 207.5,49,918.5,-180,0
+    max: 30
+
+regions:
+  everywhere:
+   type: global
+   flags:
+     kill_player:
+       who: '*'
+       allow: true
+       triggers:
+        give_loadout:
+          loadout:
+            0:
+              title: '&eGolden Apple'
+              item: golden_apple
+
+loadout:
+  effects:
+  - damage resistance:5,5
