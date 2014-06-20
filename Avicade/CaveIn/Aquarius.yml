@@ -1,0 +1,47 @@
+info:
+  title: Aquarius
+  world: Aquarius
+  version: 1.0
+  type: cave_in
+  creators:
+  - ParaSpider
+  spawn: 0.5,36.5,-17.5,0,-25
+
+teams:
+  white:
+    title: Players
+    spawns:
+    - spawn
+
+blocks:
+- stained clay:0
+- stained clay:1
+- stained clay:2
+- stained clay:3
+- stained clay:4
+- stained clay:5
+- stained clay:6
+- stained clay:7
+- stained clay:8
+- stained clay:9
+- stained clay:10
+- stained clay:11
+- stained clay:12
+- stained clay:13
+- stained clay:14
+- stained clay:15
+
+goal: win
+
+regions:
+  spawn:
+    type: cuboid
+    min: -16,25,-16
+    max: 16,25,16
+    flags:
+      leave:
+        who: '*'
+  win:
+    type: cuboid
+    min: -16,41,-16
+    max: 16,41,16
