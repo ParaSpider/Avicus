@@ -1,0 +1,49 @@
+info:
+  title: Parabyte
+  world: Parabyte
+  version: 1.0
+  type: cave_in
+  creators:
+  - ParaSpider
+  spawn: 0.5,35,0.5,90,0
+
+teams:
+  white:
+    title: Players
+    spawns:
+    - spawn
+
+blocks:
+- stained clay:0
+- stained clay:1
+- stained clay:2
+- stained clay:3
+- stained clay:4
+- stained clay:5
+- stained clay:6
+- stained clay:7
+- stained clay:8
+- stained clay:9
+- stained clay:10
+- stained clay:11
+- stained clay:12
+- stained clay:13
+- stained clay:14
+- stained clay:15
+
+goal: win
+
+regions:
+  spawn:
+    type: cylinder
+    center: 0,10,0
+    radius: 12
+    height: 1
+    flags:
+      leave:
+        who: '*'
+  win:
+    type: cylinder
+    center: 0,34,0
+    radius: 30
+    height: 1
