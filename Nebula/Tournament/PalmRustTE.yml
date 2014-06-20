@@ -1,0 +1,93 @@
+info:
+  title: Palm Rust [TE]
+  world: PalmRustTE
+  version: 1.0
+  type: dtm
+  creators:
+  - ParaSpider
+  - steven5703
+  - stu133
+  spawn: 18.5,43,58.5,-90,0
+
+remove-drops:
+- leather helmet
+- leather chestplate
+- chain leggings
+- leather boots
+
+repair-drops:
+- bow
+- diamond pickaxe
+- iron sword
+
+loadout:
+  effects:
+  - damage resistance:5,5
+  helmet:
+    item: leather helmet
+  chestplate:
+    item: leather chestplate
+  leggings:
+    item: chain leggings
+  boots:
+    item: leather boots
+  0:
+    item: iron sword
+  1:
+    item: bow
+    enchants:
+    - arrow infinite:1
+  2:
+    item: diamond pickaxe
+    enchants:
+    - dig speed:1
+  3:
+    item: iron shovel
+  4:
+    item: log
+    amount: 64
+  5:
+    item: steak
+    amount: 16
+  27:
+    item: arrow
+    amount: 1
+
+teams:
+  orange:
+    spawn: -56.5,36,33.5,-45,0
+    title: Orange Team
+    monuments:
+      a:
+        name: Left
+        location: -47,24,83
+      b:
+        name: Right
+        location: -7,24,43
+  green:
+    spawn: 47.5,36,137.5,135,0
+    title: Green Team
+    monuments:
+      a:
+        name: Left
+        location: 37,24,87
+      b:
+        name: Right
+        location: -3,24,127
+regions:
+  spawn-gr:
+    type: sphere
+    center: 47,36,137
+    radius: 8
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not edit spawns in this map!'
+  spawn-or:
+    type: sphere
+    center: -56,36,33
+    radius: 8
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not edit spawns in this map!'
