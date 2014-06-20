@@ -1,0 +1,97 @@
+info:
+  title: Cleyra
+  world: Cleyra
+  version: 1.0
+  type: dtm
+  creators:
+  - Evocal
+  - steven5703
+  - AwarriorVenom
+  spawn: 111.50,79.0,-798.52,90,0
+
+repair-drops:
+- stone sword
+- bow
+- diamond pickaxe
+
+remove-drops:
+- leather chestplate
+
+
+loadout:
+  chestplate:
+    item: leather chestplate
+  0:
+    title: '&9Iron Sword'
+    item: iron sword
+    enchants:
+    - damage_all:127
+    - fire_aspect:127
+  1:
+    title: '&4Bow'
+    item: bow
+    enchants:
+    - arrow_damage:127
+    - arrow_fire:127
+  2:
+    item: stone axe
+    enchants:
+    - dig_speed:4
+  3:
+    title: '&eGolden Apple'
+    item: golden apple
+    amount: 1
+  4:
+    item: bread
+    amount: 16
+  5:
+    item: log
+    amount: 64
+  6:
+    item: cobblestone
+    amount: 32
+  28:
+    item: arrow
+    amount: 1
+
+regions:
+  everywhere:
+    type: global
+    flags:
+      kill_player:
+        who: '*'
+        triggers:
+          sound:
+            sound: AMBIENCE_THUNDER
+            volume: 0.7
+            pitch: 2.0
+      fall_damage:
+        who: '*'
+  blue-spawn:
+    type: sphere
+    center: -119,125,221
+    radius: 15
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not interact with the safezone.'
+      damage:
+        who: 'blue'
+  red-spawn:
+    type: sphere
+    center: -349,125,295
+    radius: 15
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not interact with the safezone.'
+      damage:
+        who: 'red'
+
+teams:
+  blue:
+    spawn: -119.5,129,221.5,135,0
+    title: B Squad
+  red:
+    spawn: -349.5,129,295.5,-45,0
+    title: R Squad
